@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 'nowrap';
+    align-items: center;
+    justify-items: start;
+}
+
+.temperature {
+    width: 15%;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.name {
+    width: 70%;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.weatherIcon {
+    filter: invert(100);
+    width: 15%;
+}

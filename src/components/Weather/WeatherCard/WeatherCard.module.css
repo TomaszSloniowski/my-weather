@@ -1,0 +1,63 @@
+.coontainer {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    padding-left: 10px;
+}
+
+.temperatureContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+}
+
+.temperature {
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.temperatureUnits {
+    transform: translate(5px, 20px);
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.name {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.date {
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 0px 0px 20px 10px
+}
+
+.weatherIcon {
+    filter: invert(100);
+    width: 100px;
+    margin: 30px 20px;
+}
+
+.paramsContainer {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.param {
+    margin: 10px;
+}
+
+.errorMessage {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 400;
+}
