@@ -6,7 +6,8 @@ import { Weather } from "../../types/weather.types";
 import { getWeather } from "../../services/weather.service";
 import { WeatherList } from "../Weather/WeatherList/WeatherList.component";
 import { useDispatch } from "react-redux";
-import { weatherActions } from "../../utlils/weatherSlice";
+import { weatherActions } from "../../utils/weatherSlice";
+import classes from "./Main.module.css";
 
 function Main() {
   const [city, setCity] = useState<string>("");
@@ -19,7 +20,6 @@ function Main() {
     getWeather(city)
       .then((response) => {
         setWeather(response.data);
-        console.log(response.data);
         setIsError(false);
         dispatch(weatherActions.addWeather(response.data));
       })
@@ -52,15 +52,7 @@ function Main() {
             {!isError ? (
               <WeatherCard data={weather} />
             ) : (
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: "#FFFFFF",
-                  paddingLeft: "10px",
-                }}
-              >
-                No search results...
-              </p>
+              <p className={classes.noResult}>No search results...</p>
             )}
           </Grid>
         </Grid>

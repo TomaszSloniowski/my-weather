@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button, OutlinedInput } from "@mui/material";
+import classes from "./Searchbar.module.css";
 
 interface SearchbarProps {
   value: string;
@@ -14,7 +15,7 @@ export const Searchbar: React.FC<SearchbarProps> = (props) => {
   return (
     <>
       <OutlinedInput
-        style={{ background: "#a70000" }}
+        className={classes.outlinedInput}
         fullWidth
         id="input-with-button"
         value={inputValue}
@@ -23,18 +24,10 @@ export const Searchbar: React.FC<SearchbarProps> = (props) => {
         startAdornment={
           <InputAdornment position="start" style={{ padding: "0px" }}>
             <Button
-              style={{ background: "#a70000", color: "white", width: "30px" }}
+              className={classes.buton}
               onClick={() => props.onChange(inputValue)}
             >
-              <SearchIcon
-                style={{
-                  width: "35px",
-                  height: "35px",
-                  position: "relative",
-                  left: "-2px",
-                  top: "2px",
-                }}
-              />
+              <SearchIcon className={classes.searchIcon} />
             </Button>
           </InputAdornment>
         }

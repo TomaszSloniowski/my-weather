@@ -1,6 +1,7 @@
+import { ReactElement } from "react";
 import background from "../../assets/sky_bg.jpg";
 
-export const Layout = (props: any) => {
+export const Layout = (props: { children: ReactElement }) => {
   const { children } = props;
 
   return (

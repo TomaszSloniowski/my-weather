@@ -1,0 +1,18 @@
+.outlinedInput {
+    background: #a70000
+}
+
+.buton {
+    background: #a70000;
+    color: #FFFFFF;
+    width: 30px;
+}
+
+.searchIcon {
+    color: #FFFFFF;    
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: -2px;
+    top: 2px;
+}

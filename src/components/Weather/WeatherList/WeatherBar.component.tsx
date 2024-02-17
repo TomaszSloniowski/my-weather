@@ -1,5 +1,5 @@
 import { Weather } from "../../../types/weather.types";
-import { getWeatherSmallIcon } from "../../../utlils/utils";
+import { getWeatherSmallIcon } from "../../../utils/utils";
 import classes from "./WeatherBar.module.css";
 
 interface WeatherBarProps {

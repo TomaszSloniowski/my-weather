@@ -1,6 +1,6 @@
 import { WeatherBar } from "./WeatherBar.component";
 import { useSelector } from "react-redux";
-import { RootState } from "../../../utlils/store";
+import { RootState } from "../../../utils/store";
 
 export const WeatherList: React.FC = () => {
   const weatherList = useSelector((state: RootState) => state.weather);

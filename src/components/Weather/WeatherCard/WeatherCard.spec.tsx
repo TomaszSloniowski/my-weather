@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { WeatherCard } from "./WeatherCard.component";
 import { Provider } from "react-redux";
 import { Weather } from "../../../types/weather.types";
-import store from "../../../utlils/store";
+import store from "../../../utils/store";
 
 export const weatherData: Weather = {
   coord: {
